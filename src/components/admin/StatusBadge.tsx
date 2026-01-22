@@ -10,7 +10,16 @@ type StatusType =
   | "pending"
   | "failed"
   | "received"
-  | "paid";
+  | "paid"
+  | "buy_online"
+  | "quote_only"
+  | "in_stock"
+  | "out_of_stock"
+  | "new"
+  | "in_review"
+  | "quoted"
+  | "approved"
+  | "converted";
 
 interface StatusBadgeProps {
   status: StatusType;
@@ -57,6 +66,42 @@ const statusConfig: Record<StatusType, { label: string; className: string }> = {
   paid: {
     label: "Paid",
     className: "bg-green-100 text-green-600",
+  },
+  buy_online: {
+    label: "Buy Online",
+    className: "bg-blue-100 text-blue-600",
+  },
+  quote_only: {
+    label: "Quote Only",
+    className: "bg-purple-100 text-purple-600",
+  },
+  in_stock: {
+    label: "In Stock",
+    className: "bg-green-100 text-green-600",
+  },
+  out_of_stock: {
+    label: "Out of Stock",
+    className: "bg-red-100 text-red-600",
+  },
+  new: {
+    label: "New",
+    className: "bg-blue-100 text-blue-600",
+  },
+  in_review: {
+    label: "In Review",
+    className: "bg-yellow-100 text-yellow-600",
+  },
+  quoted: {
+    label: "Quoted",
+    className: "bg-purple-100 text-purple-600",
+  },
+  approved: {
+    label: "Approved",
+    className: "bg-green-100 text-green-600",
+  },
+  converted: {
+    label: "Converted to Order",
+    className: "bg-primary/10 text-primary",
   },
 };
 
