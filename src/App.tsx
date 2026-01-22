@@ -8,6 +8,16 @@ import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import DeliveryInformation from "./pages/DeliveryInformation";
 import Checkout from "./pages/Checkout";
+import Testimonials from "./pages/Testimonials";
+import Industries from "./pages/Industries";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import RefundPolicy from "./pages/RefundPolicy";
+import Cart from "./pages/Cart";
+import TrackOrder from "./pages/TrackOrder";
 import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import ForgotPassword from "./pages/auth/ForgotPassword";
@@ -29,6 +39,16 @@ const App = () => (
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/delivery" element={<DeliveryInformation />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/track-order" element={<TrackOrder />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
