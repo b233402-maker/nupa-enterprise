@@ -81,7 +81,7 @@ const Payments = () => {
         open={!!selectedPayment}
         onOpenChange={() => setSelectedPayment(null)}
       >
-        <DialogContent className="sm:max-w-md">
+        <DialogContent className="sm:max-w-md max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Payment Details</DialogTitle>
           </DialogHeader>
