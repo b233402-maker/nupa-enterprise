@@ -135,7 +135,7 @@ const Quotes = () => {
 
       {/* Quote Details Modal */}
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent className="max-w-lg">
+        <DialogContent className="max-w-lg max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Quote Details</DialogTitle>
             <DialogDescription>{selectedQuote?.quoteId}</DialogDescription>
