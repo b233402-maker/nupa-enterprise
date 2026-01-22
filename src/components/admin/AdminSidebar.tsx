@@ -48,7 +48,7 @@ const AdminSidebar = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="flex-1 px-3 overflow-y-auto">
+      <nav className="flex-1 px-3 overflow-y-auto scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
         <div className="mb-2">
           <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-3">
             Main

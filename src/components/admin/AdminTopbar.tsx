@@ -2,7 +2,7 @@ import { Search, Bell } from "lucide-react";
 
 const AdminTopbar = () => {
   return (
-    <header className="sticky top-0 z-40 h-16 bg-muted/30 border-b border-border flex items-center justify-between px-6">
+    <header className="sticky top-0 z-40 h-16 bg-background border-b border-border flex items-center justify-between px-6">
       {/* Left Spacer */}
       <div />
 
